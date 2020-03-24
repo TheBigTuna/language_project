@@ -1,35 +1,26 @@
 <?php
  include('navbar.php');
 ?>
+<div id="videoBG">
+   <video autoplay loop muted class="wrapper__video">
+      <source src="video/headerVideo.mp4">
+   </video>
+</div>
 
-<!-- <div id="grass"></div> -->
-<!-- <div class="sun"></div>
-<div class="cloud"></div>
-<div class="cloud2"></div>
-<div class="cloud3"></div>
-<div class="cloud4"></div>
+<div class="row">
+    <div class="col-0 col-sm-3"></div>
+    <div class="col-12 col-sm-6">
+        <div id="lessons">
+            <ul class="list-group">
+            <h1 id="lessonsText">Lessons Available</h1>
+            <a href="lessons.php?Type=Spanish"><li class="list-group-item"><h4 class="text-center">Spanish</h4></li></a>
+            <!-- <li class="list-group-item"><h4 class="text-center">Dapibus ac facilisis in</h4></li>
+            <li class="list-group-item"><h4 class="text-center">Morbi leo risus</h4></li>
+            <li class="list-group-item"><h4 class="text-center">Porta ac consectetur ac</h4></li>
+            <li class="list-group-item"><h4 class="text-center">Vestibulum at eros</h4></li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="col-0 col-sm-3"></div>
+</div>
 
-<div id="intro">
-    <h3 class="animated fadeInDown">LittleLearners</h3>
-    <a href="name.php" class="btn-get-started animated fadeInUp">Read More</a>
-</div> -->
-
-<!-- <div id="gnome"> 
-  <div id="torso" class="torso"></div>
-  <div id="head" class="head"></div>
-  <div id="hat" class="hat"></div>  
-  <div class="eyes"></div>
-  <div id="stach" class="stach"></div>  
-  <div class="feet"></div>
-  <div id="poke">Ouch!</div>
-  <div id="shadow"></div>
-</div> -->
-
-
-
-
-
-
-
-
-  
