@@ -81,7 +81,8 @@ body{
 }
 
 #lessonsText{
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  font-weight: 700;
   color: black;
   text-align: center;
   margin-top: 1.2em;
@@ -103,22 +104,6 @@ body{
   font-weight: 700;
 }
 
-
-
-
-
-
-#videoBG{
-  width: 100%;
-  height: 50vh;
-  overflow: hidden;
-}
-
-#videoBG .wrapper__video{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
 
 
 
