@@ -3,6 +3,8 @@
 ?>
 
 <link href="/style/teach.css" rel="stylesheet">
+<link href="/style/house.css" rel="stylesheet">
+
 
 <div id="grass"></div>
 <div class="sun"></div>
@@ -20,6 +22,15 @@
   <div class="feet"></div>
   <div id="poke">Ouch!</div>
   <div id="shadow"></div>
+</div>
+
+<div class="house d-none d-xl-block">
+  <div class="chimney"></div>
+  <div class="roof"></div>
+  <div class="door"></div>
+  <div class="window"></div>
+
+  <div class="bush"></div>
 </div>
 
 <!-- <div class="bear">

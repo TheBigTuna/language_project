@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 * {
-  font-family: Raleway;
+  font-family: 'Nunito', sans-serif;
 }
 
 body{
   overflow-x: hidden;
+  margin-bottom: 2rem;
 }
 
 
@@ -31,7 +32,7 @@ body{
 }
 
 #intro .btn-get-started{
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;

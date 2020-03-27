@@ -3,7 +3,7 @@
     width:100px;
     height:200px;
     position:absolute;
-    bottom:25%;
+    bottom:15%;
     left:50%;
     transform:translateX(-50px);
     
@@ -113,7 +113,7 @@
     left:-5px;
     border-radius:50% 50% 0% 0%;
     background:linear-gradient(-70deg, rgba(0,0,0,.5) 25%, transparent 75%);
-    background-color:dodgerblue;
+    background-color:violet;
   }
   .torso:before {
     width:110px;
