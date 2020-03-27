@@ -19,7 +19,7 @@
   
   .roof {
     position: absolute;
-    top: -200px;
+    top: -198px;
     border: 100px solid transparent;
     border-bottom-color: beige;
     border-left-width: 150px;

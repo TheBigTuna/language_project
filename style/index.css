@@ -25,7 +25,15 @@
 }
 
 #headText{
+    font-weight: 700;
     font-family: 'Nunito', sans-serif;
     color: white;
     font-size: 60px;
 }
+
+#subText{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 42px;
+}
+
