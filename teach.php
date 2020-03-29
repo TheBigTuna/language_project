@@ -4,6 +4,7 @@
 
 <link href="/style/teach.css" rel="stylesheet">
 <link href="/style/house.css" rel="stylesheet">
+<link href="/style/dog.css" rel="stylesheet">
 
 
 <div id="grass"></div>
@@ -13,7 +14,7 @@
 <div class="cloud3"></div>
 <div class="cloud4"></div>
 
-<div id="gnome"> 
+<!-- <div id="gnome"> 
   <div id="torso" class="torso"></div>
   <div id="head" class="head"></div>
   <div id="hat" class="hat"></div>  
@@ -22,7 +23,7 @@
   <div class="feet"></div>
   <div id="poke">Ouch!</div>
   <div id="shadow"></div>
-</div>
+</div> -->
 
 <div class="house d-none d-xl-block">
   <div class="chimney"></div>
@@ -31,6 +32,23 @@
   <div class="window"></div>
 
   <div class="bush"></div>
+</div>
+
+<div class="dog">
+  <div class="dog-head">
+    <div class="dog-ears ears-left"></div>
+    <div class="dog-ears ears-right"></div>
+    <div class="dog-eyes"></div>
+    <div class="dog-mouth">
+      <div class="dog-nose"></div>
+      <div class="dog-tongue"></div>
+    </div>
+  </div>
+  <div class="dog-tail"></div>
+  <div class="dog-body">
+    <div class="dog-foot"></div>
+  </div>
+  <div class="ball"></div>
 </div>
 
 <!-- <div class="bear">

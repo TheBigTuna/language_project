@@ -7,7 +7,7 @@
     <div id="videoBG" class="d-none d-md-block">
         <div id="headWrapper">
             <h2 id="headText">GrowthBook</h2>
-            <h2 id="subText">Learn Code Anywhere</h2>
+            <h2 id="subText">Join a young global community of learners</h2>
         </div>
         <video autoplay loop muted class="wrapper__video">
             <source src="video/headerVideo.mp4">
