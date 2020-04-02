@@ -3,11 +3,12 @@
 ?>
 <link href="/style/index.css" rel="stylesheet">
 
+
 <div id="homeContainer">
     <div id="videoBG" class="d-none d-md-block">
         <div id="headWrapper">
             <h2 id="headText">GrowthBook</h2>
-            <h2 id="subText">Join a young global community of learners</h2>
+            <h2 id="subText">Join a global community of young learners</h2>
         </div>
         <video autoplay loop muted class="wrapper__video">
             <source src="video/headerVideo.mp4">
@@ -20,12 +21,19 @@
             <div id="lessons">
                 <ul class="list-group">
                 <h2 id="lessonsText">Courses Available</h2>
-                <a href="lessons.php?Type=HTML"><li class="list-group-item"><h4 class="text-center">HTML</h4></li></a>
-                <a href="lessons.php?Type=CSS"><li class="list-group-item"><h4 class="text-center">CSS</h4></li></a>
+                <?php
+                    $FetchCourses = "SELECT DISTINCT * FROM omoore94_growthbook.courselist";        
+                    $FetchCoursesResult = mysqli_query($conn, $FetchCourses);
+                    while($row = mysqli_fetch_assoc($FetchCoursesResult)){
+                ?>
+                    <a href="lessons.php?Type=<?= $row['CourseName']; ?>"><li class="list-group-item"><h4 class="text-center"><?= $row['CourseName']; ?></h4></li></a>
+                <?php
+                    }
+                ?>
+
                 </ul>
             </div>
         </div>
         <div class="col-0 col-sm-3"></div>
     </div>
 </div>
-

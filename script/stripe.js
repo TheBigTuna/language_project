@@ -48,7 +48,7 @@ card.on('change', function(event) {
   setOutcome(event);
 });
 
-document.querySelector('form').addEventListener('submit', function(e) {
+document.getElementById('paymentForm').addEventListener('submit', function(e) {
   e.preventDefault();
   var options = {
     name: document.getElementById('first-name').value + " " + document.getElementById('last-name').value,

@@ -14,7 +14,7 @@
 <div class="cloud3"></div>
 <div class="cloud4"></div>
 
-<!-- <div id="gnome"> 
+<div id="gnome"> 
   <div id="torso" class="torso"></div>
   <div id="head" class="head"></div>
   <div id="hat" class="hat"></div>  
@@ -23,7 +23,7 @@
   <div class="feet"></div>
   <div id="poke">Ouch!</div>
   <div id="shadow"></div>
-</div> -->
+</div>
 
 <div class="house d-none d-xl-block">
   <div class="chimney"></div>
@@ -33,7 +33,7 @@
 
   <div class="bush"></div>
 </div>
-
+<!-- 
 <div class="dog">
   <div class="dog-head">
     <div class="dog-ears ears-left"></div>
@@ -49,7 +49,7 @@
     <div class="dog-foot"></div>
   </div>
   <div class="ball"></div>
-</div>
+</div> -->
 
 <!-- <div class="bear">
   <div class="b-body">

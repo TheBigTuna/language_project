@@ -107,7 +107,8 @@
 }
 
 .wrapper input[type=text],
-.wrapper input[type=password] {
+.wrapper input[type=password],
+.wrapper input[type=email] {
   background-color: #fff;
   border: none;
   color: #0d0d0d;

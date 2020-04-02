@@ -32,3 +32,13 @@ function selectSignUp(){
 
 login.addEventListener("click", selectLogin);
 signUp.addEventListener("click", selectSignUp);
+
+
+function submitSignUp() {
+    if(document.getElementById('signUpPassword1').value == document.getElementById('signUpPassword2').value){
+        SignupFields.submit();
+    } else {
+      document.getElementById('message').style.color = 'red';
+      document.getElementById('message').innerHTML = 'Passwords do not match';
+    }
+  }
