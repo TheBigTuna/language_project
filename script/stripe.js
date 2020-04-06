@@ -1,7 +1,6 @@
 // Create a Stripe client.
 var stripe = Stripe('pk_test_3hQM1mhjnqxX0QnMXwyKckiI00BQPBad03');
 
-
 var elements = stripe.elements();
 
 var card = elements.create('card', {
@@ -35,9 +34,9 @@ function setOutcome(result) {
     successElement.classList.add('visible');
 
     // In a real integration, you'd submit the form with the token to your backend server
-    //var form = document.querySelector('form');
-    //form.querySelector('input[name="token"]').setAttribute('value', result.token.id);
-    //form.submit();
+    var form = document.getElementById('paymentForm');
+    form.querySelector('input[name="token"]').setAttribute('value', result.token.id);
+    form.submit();
   } else if (result.error) {
     errorElement.textContent = result.error.message;
     errorElement.classList.add('visible');

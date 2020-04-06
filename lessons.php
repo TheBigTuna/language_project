@@ -55,8 +55,11 @@
       <div class="container">
         <div id="UserInformationBG">
           <div id="AccountInformationBG">
-          <h2 id="paymentInformationTitle">Account Information</h2>
 
+          <?php
+            if(!isset($_SESSION['User'])){
+          ?>
+            <h2 id="paymentInformationTitle">Account Information</h2>
             <div class="wrapper">
               <div id="formContent">
                <h2 id="selectLogin" class="active">Sign In</h2>
@@ -83,6 +86,9 @@
 
               </div>
             </div>
+          <?php
+            }
+          ?>
 
           </div>
           <div id="PaymentInformationBG">
@@ -94,7 +100,8 @@
   
 
 
-            <form action="//httpbin.org/post" id="paymentForm" method="POST">
+            <!-- <form action="//httpbin.org/post" id="paymentForm" method="POST"> -->
+            <!-- <form action="handler/charge.php" id="paymentForm" method="POST">
               <input type="hidden" name="token" />
               <div class="group">
                 <label>
@@ -148,8 +155,58 @@
                   Success! Your Stripe token is <span class="token"></span>
                 </div>
               </div>
+          </form> -->
+          <form action="handler/charge.php" method="POST">
+          <div class="group">
+          <input type="hidden" name="courseName" value="<?= $_GET['Type']; ?>">
+                <label>
+                  <span>First name</span>
+                  <input id="first-name" name="first-name" class="field" placeholder="" />
+                </label>
+                <label>
+                  <span>Last name</span>
+                  <input id="last-name" name="last-name" class="field" placeholder="" />
+                </label>
+              </div>
+              <div class="group">
+                <label>
+                  <span>Address</span>
+                  <input id="address-line1" name="address_line1" class="field" placeholder="" />
+                </label>
+                <label>
+                  <span>Address (cont.)</span>
+                  <input id="address-line2" name="address_line2" class="field" placeholder="" />
+                </label>
+                <label>
+                  <span>City</span>
+                  <input id="address-city" name="address_city" class="field" placeholder="" />
+                </label>
+                <label>
+                  <span>State</span>
+                  <input id="address-state" name="address_state" class="field" placeholder="" />
+                </label>
+                <label>
+                  <span>ZIP</span>
+                  <input id="address-zip" name="address_zip" class="field" placeholder="" />
+                </label>
+                <!-- <label>
+                  <span>Country</span>
+                  <select name="address_country" id="address-country" class="field">
+                    <option value="IN">India</option>
+                    <option value="SG" selected>Singapore</option>
+                  </select>
+                </label> -->
+              </div>
+            <script
+              src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+              data-key="pk_test_3hQM1mhjnqxX0QnMXwyKckiI00BQPBad03"
+              data-amount="1500"
+              data-name="<?= $_GET['Type']; ?>"
+              data-description="Purchase Course"
+              data-image="https://s3.amazonaws.com/stripe-uploads/acct_19EnQrGHC6pu6Qvdmerchant-icon-1485553962843-logo_stripe.png"
+              data-locale="auto">
+            </script>
           </form>
-            
 
 
           </div>

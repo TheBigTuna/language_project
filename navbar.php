@@ -46,7 +46,7 @@
 									<a class="nav-link" href="/">Home</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="/">Courses</a>
+									<a class="nav-link" href="courses.php">Courses</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 									<a class="nav-link" href="contact.php">Contact</a>
@@ -55,7 +55,7 @@
 									if(!isset($_SESSION['User'])){
 								?>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="contact.php">Login</a>
+									<a class="nav-link" href="login.php">Login</a>
 								</li>
 								<?php
 									}
