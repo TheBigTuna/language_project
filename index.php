@@ -10,7 +10,7 @@
             <h2 id="headText">GrowthBook</h2>
             <h2 id="subText">Join a global community of young learners</h2>
         </div>
-        <video autoplay loop muted class="wrapper__video">
+        <video preload autoplay loop muted class="wrapper__video">
             <source src="video/headerVideo.mp4">
         </video>
     </div>

@@ -24,7 +24,7 @@
               <h3 style="font-weight: 700;">Course Overview</h3>
               <div id="lessonCourseOverview">
                 <ul class="list-group">
-                      <li class="list-group-item listHeader">Introduction <a href="teach.php"><button class="btn startCourseButton">Start</button></a></li>
+                      <li class="list-group-item listHeader">Introduction <a href="Courses/<?= $_GET['Type']; ?>/introduction.php"><button class="btn startCourseButton">Start</button></a></li>
                   <?php
                       $CourseType = mysqli_real_escape_string($conn, $_GET['Type']);
 
@@ -40,7 +40,7 @@
                       $FetchTasksResult = mysqli_query($conn, $FetchTasks);
                       while($row = mysqli_fetch_assoc($FetchTasksResult)){
                   ?>
-                      <li class="list-group-item listContent"><?= $row['TaskName']; ?><a href="teach.php"><button class="btn startCourseButton">Start</button></a></li>
+                      <li class="list-group-item listContent"><?= $row['TaskName']; ?><a href="Courses/<?= $row['CourseName']; ?>/<?= $row['TaskName']; ?>"><button class="btn startCourseButton">Start</button></a></li>
                   <?php
                       }
                   ?>
