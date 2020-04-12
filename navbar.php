@@ -46,16 +46,16 @@
 									<a class="nav-link" href="/">Home</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="courses.php">Courses</a>
+									<a class="nav-link" href="/courses.php">Courses</a>
 								</li>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="contact.php">Contact</a>
+									<a class="nav-link" href="/contact.php">Contact</a>
 								</li>
 								<?php
 									if(!isset($_SESSION['User'])){
 								?>
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="login.php">Login</a>
+									<a class="nav-link" href="/login.php">Login</a>
 								</li>
 								<?php
 									}
@@ -64,9 +64,8 @@
 								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
 									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><?= $_SESSION['User']; ?></a>
 									<div class="dropdown-menu">
-										<!-- <a class="dropdown-item" href="#">Account</a> -->
-										<a class="dropdown-item" href="#">Account</a>
-										<a class="dropdown-item" href="handler/signout.php">Sign Out</a>
+										<a class="dropdown-item" href="/account/profile.php">View Profile</a>
+										<a class="dropdown-item" href="/handler/signout.php">Sign Out</a>
 									</div>
 								</li>
 								<?php

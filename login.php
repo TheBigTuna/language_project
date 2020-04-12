@@ -16,7 +16,7 @@
 
 <link href="/style/lesson.css" rel="stylesheet">
 
-<div class="row" style="margin-top: 10rem;">
+<div class="row" style="margin-top: 9rem;">
         <div class="col-0 col-sm-3"></div>
         <div class="col-12 col-sm-6">
             <div id="lessons">

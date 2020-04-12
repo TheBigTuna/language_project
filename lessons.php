@@ -197,16 +197,39 @@
                   </select>
                 </label> -->
               </div>
-            <script
+              <!-- Old school Checkout -->
+            <!-- <script
               src="https://checkout.stripe.com/checkout.js" class="stripe-button"
               data-key="pk_test_3hQM1mhjnqxX0QnMXwyKckiI00BQPBad03"
-              data-amount="1500"
+              data-amount="2000"
               data-name="<?= $_GET['Type']; ?>"
               data-description="Purchase Course"
               data-image="https://s3.amazonaws.com/stripe-uploads/acct_19EnQrGHC6pu6Qvdmerchant-icon-1485553962843-logo_stripe.png"
               data-locale="auto">
-            </script>
+            </script> -->
           </form>
+          <!-- New school checkout button -->
+
+          <button
+            style="
+            background-color: #56baed;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 15px;
+            -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+            box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+            -webkit-border-radius: 5px 5px 5px 5px;
+            border-radius: 5px 5px 5px 5px;
+            margin: 0 auto;
+            width: 80%;
+            "
+            id="checkout-button-plan_H4MYkHgZIaB2qi"
+            role="link"
+          >
+            Checkout
+          </button>
+          <div id="error-message"></div>
 
 
           </div>

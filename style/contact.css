@@ -3,8 +3,8 @@
 #contactContainer {
 	max-width: 800px;
 	width: 100%;
-	margin: 8rem auto;
-	position: relative;
+	margin: 5rem auto;
+	padding: 1rem;
 }
 
 
@@ -22,9 +22,9 @@
 }
 
 #contact h4 {
-	margin:5px 0 15px;
-	display:block;
-	font-size:13px;
+	margin: 5px 0 15px;
+	display: block;
+	font-size: 13px;
 }
 
 fieldset {

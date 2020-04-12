@@ -8,15 +8,17 @@
         <div class="col-0 col-sm-1"></div>
         <div class="col-12 col-sm-10">
             <div id="courses">
-                <h2 id="lessonsText">Courses Available</h2>
+                <h2 id="courseText">Courses Available</h2>
+                <h2 id="courseSubText">Browse courses by whatever peaks your interest</h2>
+
                 <?php
                     $FetchCourses = "SELECT DISTINCT * FROM omoore94_growthbook.courselist";        
                     $FetchCoursesResult = mysqli_query($conn, $FetchCourses);
                     while($row = mysqli_fetch_assoc($FetchCoursesResult)){
-                        if($row['CourseName'] == "HTML"){
+                        if($row['CourseName'] == "HTML5"){
                             $Icon = "<i class='devicon-html5-plain-wordmark colored'></i>";    
                         }
-                        elseif($row['CourseName'] == "CSS"){
+                        elseif($row['CourseName'] == "CSS3"){
                             $Icon = "<i class='devicon-css3-plain-wordmark colored'></i>";
                         }
                 ?>
