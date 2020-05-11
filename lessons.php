@@ -13,7 +13,6 @@
           <div id="lessonPreviewBG">
             <div id="lessonPreviewHeader">
               <h1 id="lessonPreviewHeaderTitle"><?= $_GET['Type']; ?></h1>
-              <h5 id="lessonPreviewHeaderSubtitle">Lesson Preview Header</h5>
             </div>
             <div id="lessonPreviewVideoBG">
               <video controls class="wrapper__video">
@@ -21,7 +20,7 @@
               </video>
             </div>
             <div id="lessonCourseOverviewBG">
-              <h3 style="font-weight: 700;">Course Overview</h3>
+              <h3 style="font-weight: 700; text-align: center;">Course Overview</h3>
               <div id="lessonCourseOverview">
                 <ul class="list-group">
                       <li class="list-group-item listHeader">Introduction <a href="Courses/<?= $_GET['Type']; ?>/introduction.php"><button class="btn startCourseButton">Start</button></a></li>
@@ -81,7 +80,7 @@
                 </form>
                 <!-- Remind Passowrd -->
                 <div id="formFooter">
-                  <a class="underlineHover" href="#">Forgot Password?</a>
+                  <a class="underlineHover" href="forgotPassword.php">Forgot Password?</a>
                 </div>
 
               </div>
