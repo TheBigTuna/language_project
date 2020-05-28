@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h3 class="text-center">GrowthBook helps young learners build a foundation for their future</h3>
-                        <h6 class="text-center">Kids learn core programming concepts with interactive courses.</h6>
+                        <h5 class="text-center mt-3">Kids learn core programming concepts with interactive courses.</h5>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     <div class="card-body">
                         <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
                         <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
-                        <hr> b
+                        <hr> 
                         <ul class="fa-ul">
                         <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
                         <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>

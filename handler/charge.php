@@ -27,10 +27,12 @@
     $ID ++;
 
     $InsertOrders = "INSERT INTO omoore94_growthbook.orders (ID, Email, CourseName, Token, TokenType, Timestamp) VALUES ('$ID', '$stipeEmail', '$CourseName', '$Token', '$TokenType', '$Timestamp');";  
-    $InsertOrdersResult = mysqli_query($conn, $InsertOrders);
+    // $InsertOrdersResult = mysqli_query($conn, $InsertOrders);
 
     $InsertOrderDetails = "INSERT INTO omoore94_growthbook.orderdetails (ID, FirstName, LastName, Address1, Address2, City, State, Country) VALUES ('$ID', '$FirstName', '$LastName', '$Address1', '$Address2', '$City', '$State', 'N/A');";  
-    $InsertOrderDetailsResult = mysqli_query($conn, $InsertOrderDetails);
+    // $InsertOrderDetailsResult = mysqli_query($conn, $InsertOrderDetails);
 
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    print_r($_SESSION);
+
+    // header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>

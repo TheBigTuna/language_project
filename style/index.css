@@ -37,18 +37,10 @@
     font-size: 32px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+.pricing .card{
+  /* background-color: #27c0c9;
+  color: white; */
+}
 .pricing .card-price .period {
     font-size: 0.8rem;
   }

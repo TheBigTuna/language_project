@@ -14,7 +14,6 @@ function removeAccountStyling(){
 
 function selectLogin(){
     removeAccountStyling();
-
     login.classList.add("active");
     signUp.classList.add("underlineHover");
     LoginFields.classList.remove("d-none");
@@ -23,15 +22,18 @@ function selectLogin(){
 
 function selectSignUp(){
     removeAccountStyling();
-
     signUp.classList.add("active");
     login.classList.add("underlineHover");
     SignupFields.classList.remove("d-none");
-
 }
 
-login.addEventListener("click", selectLogin);
-signUp.addEventListener("click", selectSignUp);
+
+if(login !== null){
+    login.addEventListener("click", selectLogin);
+}
+if(signUp !== null){
+    signUp.addEventListener("click", selectSignUp);
+}
 
 
 function submitSignUp() {

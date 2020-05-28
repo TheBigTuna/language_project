@@ -65,17 +65,17 @@
                 <h2 id="selectSignUp" class="underlineHover">Sign Up</h2>
 
                 <form id="LoginFields" method="POST" action="handler/register.php">
-                  <input type="hidden" name="registrationType" value="login">
-                  <input type="email" id="login" class="second" name="Email" placeholder="Email Address" maxlength="50" required>
-                  <input type="password" id="password" class="third" name="password" placeholder="Password" maxlength="20" required>
+                  <input type="hidden" name="registrationType" value="login" autocomplete="off">
+                  <input type="email" id="login" class="second" name="Email" placeholder="Email Address" maxlength="50" autocomplete="off" required>
+                  <input type="password" id="password" class="third" name="password" placeholder="Password" maxlength="20" autocomplete="off" required>
                   <input type="submit" class="fourth" value="Log In">
                 </form>
                 <form id="SignupFields" class="d-none" method="POST"  action="handler/register.php">
                   <input type="hidden" name="registrationType" value="signUp">
                   <span id='message'></span>
-                  <input type="email" id="login" class="second" name="Email" placeholder="Email Address" maxlength="50" required>
-                  <input type="password" id="signUpPassword1" class="third" name="Password" placeholder="Enter Password" maxlength="20" required>
-                  <input type="password" id="signUpPassword2" class="third" name="ConfirmPassword" placeholder="Confirm Password" maxlength="20" required>
+                  <input type="email" id="login" class="second" name="Email" placeholder="Email Address" maxlength="50" autocomplete="off" required>
+                  <input type="password" id="signUpPassword1" class="third" name="Password" placeholder="Enter Password" maxlength="20" autocomplete="off" required>
+                  <input type="password" id="signUpPassword2" class="third" name="ConfirmPassword" placeholder="Confirm Password" maxlength="20" autocomplete="off" required>
                   <input type="button" class="fourth" value="Sign Up"  onclick="submitSignUp();">
                 </form>
                 <!-- Remind Passowrd -->
@@ -90,15 +90,16 @@
           ?>
 
           </div>
+
+
+          <?php 
+            print_r($_SESSION); 
+            if(in_array($_GET['Type'], $_SESSION['UserCourses']) === false){
+          ?>
+
           <div id="PaymentInformationBG">
             <h2 id="paymentInformationTitle">Payment Information</h2>
             
-
-
-            
-  
-
-
             <!-- <form action="//httpbin.org/post" id="paymentForm" method="POST"> -->
             <!-- <form action="handler/charge.php" id="paymentForm" method="POST">
               <input type="hidden" name="token" />
@@ -160,33 +161,33 @@
           <input type="hidden" name="courseName" value="<?= $_GET['Type']; ?>">
                 <label>
                   <span>First name</span>
-                  <input id="first-name" name="first-name" class="field" placeholder="" />
+                  <input id="first-name" name="first-name" class="field" placeholder="" autocomplete="off" />
                 </label>
                 <label>
                   <span>Last name</span>
-                  <input id="last-name" name="last-name" class="field" placeholder="" />
+                  <input id="last-name" name="last-name" class="field" placeholder="" autocomplete="off" />
                 </label>
               </div>
               <div class="group">
                 <label>
                   <span>Address</span>
-                  <input id="address-line1" name="address_line1" class="field" placeholder="" />
+                  <input id="address-line1" name="address_line1" class="field" placeholder="" autocomplete="off" />
                 </label>
                 <label>
                   <span>Address (cont.)</span>
-                  <input id="address-line2" name="address_line2" class="field" placeholder="" />
+                  <input id="address-line2" name="address_line2" class="field" placeholder="" autocomplete="off" />
                 </label>
                 <label>
-                  <span>City</span>
-                  <input id="address-city" name="address_city" class="field" placeholder="" />
+                  <span>City</span> 
+                  <input id="address-city" name="address_city" class="field" placeholder="" autocomplete="off" />
                 </label>
                 <label>
                   <span>State</span>
-                  <input id="address-state" name="address_state" class="field" placeholder="" />
+                  <input id="address-state" name="address_state" class="field" placeholder="" autocomplete="off" />
                 </label>
                 <label>
                   <span>ZIP</span>
-                  <input id="address-zip" name="address_zip" class="field" placeholder="" />
+                  <input id="address-zip" name="address_zip" class="field" placeholder="" autocomplete="off" />
                 </label>
                 <!-- <label>
                   <span>Country</span>
@@ -209,6 +210,7 @@
           </form>
           <!-- New school checkout button -->
 
+          <a href="../handler/charge.php">
           <button
             style="
             background-color: #56baed;
@@ -228,12 +230,18 @@
           >
             Checkout
           </button>
+          </a>
           <div id="error-message"></div>
 
 
           </div>
         </div>
       </div>
+          <?php } 
+          else{
+            
+          }
+          ?>
     </div>
   </div>
 </div>
