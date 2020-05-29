@@ -32,6 +32,15 @@
     $InsertOrderDetails = "INSERT INTO omoore94_growthbook.orderdetails (ID, FirstName, LastName, Address1, Address2, City, State, Country) VALUES ('$ID', '$FirstName', '$LastName', '$Address1', '$Address2', '$City', '$State', 'N/A');";  
     // $InsertOrderDetailsResult = mysqli_query($conn, $InsertOrderDetails);
 
+    $_SESSION['UserCourses'] = array();
+
+    // Check's to see if the user has previously purchased any courses
+    $FetchUserCourses = "SELECT * FROM omoore94_growthbook.orders where email = '$Email'";        
+    $FetchUserCoursesResult = mysqli_query($conn, $FetchUserCourses);
+    while($row = mysqli_fetch_assoc($FetchUserCoursesResult)){
+        array_push($_SESSION['UserCourses'], $row['CourseName']);
+    }
+
     print_r($_SESSION);
 
     // header('Location: ' . $_SERVER['HTTP_REFERER']);

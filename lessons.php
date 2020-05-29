@@ -94,6 +94,7 @@
 
           <?php 
             print_r($_SESSION); 
+            if(isset($_SESSION['UserCourses'])){
             if(in_array($_GET['Type'], $_SESSION['UserCourses']) === false){
           ?>
 
@@ -239,8 +240,9 @@
       </div>
           <?php } 
           else{
-            
+
           }
+        }
           ?>
     </div>
   </div>
