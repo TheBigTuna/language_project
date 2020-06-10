@@ -1,3 +1,8 @@
-<?php
- include('../../navbar.php');
+<?php 
+
+  $Course = "HTML5";
+  $Module = "Introduction";
+
+  include("../../teach.php");
+
 ?>
