@@ -154,3 +154,15 @@ body{
 #teachContainer a{
     text-decoration: none;
 }
+
+.completedMark{
+    color: green;
+    font-size: 2rem;
+    float: right;
+}
+
+.attentionMark{
+    color: orange;
+    font-size: 2rem;
+    float: right;
+}
