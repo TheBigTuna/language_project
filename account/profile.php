@@ -23,6 +23,7 @@
 
                 <div class="mt-5">
                     <?php
+                    if(isset($_SESSION['UserCourses'])){
                         for($i = 0; $i < count($_SESSION['UserCourses']); $i++){
                             switch ($_SESSION['UserCourses'][$i]){
                                 case "HTML5":
@@ -46,6 +47,7 @@
                     </a>
                     <?php
                         }
+                    }
                     ?>
                 </div>
 
