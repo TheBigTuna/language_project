@@ -1,3 +1,5 @@
+<link href="/style/lesson.css" rel="stylesheet">
+
 <?php
  include('navbar.php');
 ?>
@@ -8,8 +10,6 @@
     color: black !important;
   }
 </style>
-
-<link href="/style/lesson.css" rel="stylesheet">
 
 <div class="row" style="margin-top: 9rem;">
         <div class="col-0 col-sm-3"></div>
@@ -22,7 +22,7 @@
                 <div class="wrapper">
                 <div id="formContent">
                     <h5 id="paymentInformationTitle" class="mt-5">Recover Password</h5>
-                    <form id="LoginFields" method="POST" action="handler/register.php">
+                    <form id="LoginFields" method="POST" action="handler/forgotPasswordHandler.php">
                     <input type="hidden" name="registrationType" value="login">
                     <input type="email" id="login" class="second" name="text" placeholder="Email Address (Required)" maxlength="50" required>
                     <input type="submit" class="fourth" value="Send">

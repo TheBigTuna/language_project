@@ -173,10 +173,10 @@
                   <span>Address</span>
                   <input id="address-line1" name="address_line1" class="field" placeholder="" autocomplete="off" />
                 </label>
-                <label>
+                <!-- <label>
                   <span>Address (cont.)</span>
                   <input id="address-line2" name="address_line2" class="field" placeholder="" autocomplete="off" />
-                </label>
+                </label> -->
                 <label>
                   <span>City</span> 
                   <input id="address-city" name="address_city" class="field" placeholder="" autocomplete="off" />
@@ -207,10 +207,10 @@
               data-image="https://s3.amazonaws.com/stripe-uploads/acct_19EnQrGHC6pu6Qvdmerchant-icon-1485553962843-logo_stripe.png"
               data-locale="auto">
             </script> -->
-          </form>
+          <!-- </form> -->
           <!-- New school checkout button -->
 
-          <a href="../handler/charge.php">
+          <!-- <a href="../handler/charge.php"> -->
           <button
             style="
             background-color: #56baed;
@@ -230,9 +230,9 @@
           >
             Checkout
           </button>
-          </a>
+          <!-- </a> -->
           <div id="error-message"></div>
-
+          </form>
 
           </div>
         </div>

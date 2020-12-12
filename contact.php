@@ -1,8 +1,9 @@
+<link href="/style/contact.css" rel="stylesheet">
+
 <?php
  include('navbar.php');
 ?>
 
-<link href="/style/contact.css" rel="stylesheet">
 
 <div id="contactContainer">  
   <form id="contact" action="handler/contactHandler.php" method="POST">
@@ -17,14 +18,14 @@
     <fieldset>
       <input placeholder="Your Phone Number" name="PhoneNumber" type="tel" maxlength="20" autocomplete="off" tabindex="3" required>
     </fieldset>
-    <fieldset>
+    <!-- <fieldset>
       <input placeholder="Enter Subject" name="Subject" type="text" maxlength="200" autocomplete="off" tabindex="4" required>
     </fieldset>
-    <fieldset>
+    <fieldset> -->
       <textarea placeholder="Type your Message Here...." name="Message" maxlength="800" autocomplete="off" tabindex="5" required></textarea>
     </fieldset>
     <fieldset>
-      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</button>
     </fieldset>
   </form>
 </div>

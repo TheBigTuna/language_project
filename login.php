@@ -1,3 +1,6 @@
+<link href="/style/lesson.css" rel="stylesheet">
+
+
 <?php
  include('navbar.php');
 
@@ -14,7 +17,6 @@
   }
 </style>
 
-<link href="/style/lesson.css" rel="stylesheet">
 
 <div class="row" style="margin-top: 9rem;">
         <div class="col-0 col-sm-3"></div>
@@ -24,7 +26,7 @@
                     <a href="/"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/logo.svg" style="height: 7rem; width: 7rem;" alt=""></a>	
                 </div>  
                 <ul class="list-group">
-                <h5 id="paymentInformationTitle">please sign in</h5>
+                <h5 id="paymentInformationTitle">Please Sign In</h5>
                 <div class="wrapper">
                 <div id="formContent">
                 <h2 id="selectLogin" class="active">Sign In</h2>

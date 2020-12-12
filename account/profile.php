@@ -14,7 +14,7 @@
                         <div class="col-12 col-lg-3"></div>
                         <div class="col-12 col-lg-9">
                             <div class="mt-5">
-                                <h4 id="displayUserName" class="font-weight-bold">octavius moore</h4>
+                                <h3 id="displayUserName" class="font-weight-bold">Octavius Moore</h3>
                                 <a href="userinfo.php"><button class="btn btn-outline-secondary" style="width: 160px;">Edit Profile</button></a>
                             </div>
                         </div>
